@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-name="MediaViewer">
+        <div class="modal d_modal_fullscreen" tabindex="-1" data-keyboard="false" role="dialog">
+            <t class="d_media_viewer_content_call" t-call="MediaViewer.Content">
+                <t t-set="widget" t-value="widget"></t>
+            </t>
+
+            <t t-if="widget.attachments.length !== 1">
+                <a class="arrow arrow-left d_move_previous" href="#">
+                    <span class="fa fa-chevron-left" role="img" aria-label="Previous" title="Previous"/>
+                </a>
+                <a class="arrow arrow-right d_move_next" href="#">
+                    <span class="fa fa-chevron-right" role="img" aria-label="Next" title="Next"/>
+                </a>
+            </t>
+        </div>
+    </t>
+
+    <t t-name="MediaViewer.Content">
+        <div class="d_viewer_content">
+            <div class="d_viewer-header">
+                <span class="d_image_caption">
+                    <i class="fa fa-picture-o mr8" t-if="widget.activeMedia.type == 'image'" role="img" aria-label="Image" title="Image"/>
+                    <i class="fa fa-video-camera mr8" t-if="widget.activeMedia.type == 'video'" role="img" aria-label="Video" title="Video"/>
+                </span>
+                <a role="button" class="d_close_btn float-right" href="#" aria-label="Close" title="Close">×</a>
+            </div>
+            <div class="d_viewer_img_wrapper">
+                <div class="d_viewer_zoomer">
+                    <img t-if="widget.activeMedia.type === 'image'" class="d_viewer_img" t-att-src="widget.activeMedia.target" alt="Viewer"/>
+                    <iframe t-if="widget.activeMedia.type == 'video'" class="mt32 w-75 h-100" t-att-src="widget.activeMedia.target" frameborder="0"/>
+                </div>
+            </div>
+            <!-- <div t-if="widget.activeMedia.type == 'image'" class="o_viewer_toolbar btn-toolbar" role="toolbar">
+                <div class="btn-group" role="group">
+                    <a role="button" href="#" class="o_viewer_toolbar_btn btn o_zoom_in" data-toggle="tooltip" title="Zoom In"><i class="fa fa-fw fa-plus" role="img" aria-label="Zoom In"/></a>
+                    <a role="button" href="#" class="o_viewer_toolbar_btn btn o_zoom_reset disabled" data-toggle="tooltip" title="Reset Zoom"><i class="fa fa-fw fa-search" role="img" aria-label="Reset Zoom"/></a>
+                    <a role="button" href="#" class="o_viewer_toolbar_btn btn o_zoom_out disabled" data-toggle="tooltip" title="Zoom Out"><i class="fa fa-fw fa-minus" role="img" aria-label="Zoom Out"/></a>
+                </div>
+                <div class="btn-group" role="group">
+                    <a role="button" href="#" class="o_viewer_toolbar_btn btn o_rotate" data-toggle="tooltip" title="Rotate"><i class="fa fa-fw fa-repeat" role="img" aria-label="Rotate"/></a>
+                </div>
+                <div class="btn-group" role="group">
+                    <a role="button" href="#" class="o_viewer_toolbar_btn btn o_print_btn" data-toggle="tooltip" title="Print"><i class="fa fa-fw fa-print" role="img" aria-label="Print"/></a>
+                    <a role="button" href="#" class="o_viewer_toolbar_btn btn o_download_btn" data-toggle="tooltip" title="Download"><i class="fa fa-fw fa-download" role="img" aria-label="Download"/></a>
+                </div>
+            </div> -->
+        </div>
+    </t>
+</templates>

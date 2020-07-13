@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_dr_video_snippet" name="Media Collection">
+        <section class="s_dr_video_snippet pt32 pb32">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 px-1 d_thumb_container">
+                        <button class="btn d_arrow dr_s_prev btn-default border mr-2">
+                            <i class="fa fa-chevron-up"></i>
+                        </button>
+                        <div class="dr_tab_block d-flex flex-column h-100"/>
+                        <button class="btn d_arrow dr_s_next btn-default border mr-2">
+                            <i class="fa fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="col-10 dr_tab_content"/>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="d_s_dr_video_snippet_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-js="drgl_add_image" data-selector=".s_dr_video_snippet">
+                <we-button data-add-media="true" data-no-preview="true">
+                    <i class="fa fa-fw fa-plus-circle"/> Add media
+                </we-button>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

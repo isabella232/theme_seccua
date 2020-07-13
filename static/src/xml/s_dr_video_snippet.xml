@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+    <t t-name="theme_seccua.s_dr_video_snippet_tab">
+        <div class="dr_tab position-relative" t-att-data-target="data.target_url" t-att-data-videoid="data.videoid" t-att-data-type="data.type" t-attf-style="background-image:url(#{data.thumbnail});">
+            <span class="vidoe-icon">
+                <i t-if="data.type === 'video'" class="fa fa-play-circle-o fa-2x"></i>
+            </span>
+            <button type="button" class="dr_s_remove_item css_non_editable_mode_hidden o_not_editable btn" contenteditable="false" aria-label="Remove" tabindex="-1">
+                <i class="fa fa-times"/>
+            </button>
+        </div>
+    </t>
+
+    <t t-name="theme_seccua.dr_tab_content">
+        <div class="dr_tab_content_block d-flex align-items-center justify-content-center h-100" t-att-data-target="data.target_url" t-att-data-type="data.type">
+            <img t-if="data.type === 'image'" class="d_media img img-fluid" t-att-src="data.target_url"/>
+            <img t-if="data.type === 'video'" class="d_media img img-fluid" t-attf-src="https://img.youtube.com/vi/#{data.videoid}/maxresdefault.jpg"/>
+            <i t-if="data.type === 'video'" class="fa fa-play-circle-o dr-play-icon fa-5x"></i>
+            <!-- <iframe class="h-100 w-100 d_media" t-if="data.type === 'video'" t-att-src="data.target_url" frameborder="0" contenteditable="false"></iframe> -->
+        </div>
+    </t>
+
+</templates>

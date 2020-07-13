@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-name="d_carousel_inner_content">
+        <div class="d_carousel_controller_block w-100 d-none d-md-block">
+            <div class="container d_carousel_controller_container">
+                <div class="row d_carousel_controller_row">
+                    <t t-foreach="data" t-as="block">
+                        <div class="col text-center font-weight-bold d_target_col py-4" t-att-data-slide-to="block.index">
+                            <t t-raw="block.text"/>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

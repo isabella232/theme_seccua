@@ -1,0 +1,7 @@
+@mixin dr-icon-center($size) {
+    padding: 0;
+    height: $size;
+    width: $size;
+    line-height: $size;
+    text-align: center;
+}

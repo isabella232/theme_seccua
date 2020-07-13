@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_dr_banner" name="Banner">
+        <section class="s_dr_banner oe_img_bg oe_custom_bg" style="background-image: url('/website/static/src/img/backgrounds/sails.jpg');">
+            <div class="container-fluid px-0">
+                <div class="row align-items-center s_nb_column_fixed s_col_no_bgcolor custom-row no-gutters">
+                    <div class="col-12 col-md-4 custom-col">
+                        <div class="py-5 px-4 px-md-5">
+                            <div class="s_title" data-name="Title">
+                                <h2 class="s_title_default mb-4">
+                                    Summer Collection
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_dr_banner_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector" add=".s_dr_banner .custom-col" separator=","/>
+        </xpath>
+        <xpath expr="//div[@id='so_main_colorpicker']" position="attributes">
+            <attribute name="data-selector" add=".s_dr_banner .custom-col"/>
+        </xpath>
+        <xpath expr="//div[@data-js='background_position']" position="attributes">
+            <attribute name="data-selector" add=".s_dr_banner .custom-col"/>
+        </xpath>
+    </template>
+
+</odoo>

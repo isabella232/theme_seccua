@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+    <div t-name="theme_seccua.s_form_builder_placeholder_modal">
+        <div class="form-group">
+            <label for="placeholder">Placeholder</label>
+            <input type="text" class="form-control" id="placeholder"/>
+        </div>
+    </div>
+
+    <div t-name="theme_seccua.s_form_builder_default_value_modal">
+        <div class="form-group">
+            <label for="default_value">Default Value</label>
+            <input type="text" class="form-control" id="default_value"/>
+        </div>
+    </div>
+
+</templates>

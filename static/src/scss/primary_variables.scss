@@ -1,0 +1,92 @@
+// $o-theme-font-size-base: 1.125rem;
+
+// Grays
+$o-gray-color-palettes: (
+    (
+        'white': #FFFFFF,
+        '100': #f8f9fa,
+        '200': #e9ecef,
+        '300': #dee2e6,
+        '400': #ced4da,
+        '500': #adb5bd,
+        '600': #6c757d,
+        '700': #495057,
+        '800': #343a40,
+        '900': #212529,
+        'black': #000000,
+    ),
+);
+
+// Colors: (menu, footer, h1...h6, ...)
+$o-color-palettes: ();
+@each $-palette in $o-gray-color-palettes {
+    $o-color-palettes: append($o-color-palettes, (
+        'menu': map-get($-palette, 'white'),
+        'footer': map-get($-palette, '200'),
+        'text': map-get($-palette, 'black'),
+        'h1': #00378B,
+        'h2': #00378B,
+        'h3': #00378B,
+        'h4': #00378B,
+        'h5': #00378B,
+        'h6': #00378B,
+    ));
+}
+
+// Theme colors
+$o-theme-color-palettes: (
+    (
+        'alpha': #00378B,
+        'beta': #96CAE6,
+        'gamma': #7F9AC5,
+        'delta': #fea569,
+        'epsilon': #f34770,
+
+        'dark': #222,
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-fonts: (
+    ('HelveticaNeue', 'Arial', sans-serif),
+    ('Abel', sans-serif),
+    ('Cinzel', serif),
+    ('Old Standard TT', serif),
+    ('Playfair Display', serif),
+    ('Source Sans Pro', sans-serif),
+);
+$o-theme-font-urls: (
+    null,
+    'Abel',
+    'Cinzel:400,700',
+    'Old+Standard+TT:400,400i,700',
+    'Playfair+Display:400,400i,700,700i',
+    'Source+Sans+Pro:400,400i,700,700i',
+);
+$o-theme-font-names: (
+    'HelveticaNeue',
+    'Abel',
+    'Cinzel',
+    'Old Standard',
+    'Playfair Display',
+    'Source Sans Pro',
+);
+
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-theme-color-palette-number: 1;
+
+$o-website-values-palettes: (
+    (
+        'font-number': 1,
+        'headings-font-number': 1,
+        'buttons-font-number': 1,
+        'navbar-font-number': 1,
+    ),
+);

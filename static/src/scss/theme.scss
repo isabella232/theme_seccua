@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'HelveticaNeue';
+    font-weight: $font-weight-lighter;
+    src: url('/theme_seccua/static/src/fonts/HelveticaNeue/HelveticaNeueThin.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'HelveticaNeue';
+    font-weight: $font-weight-light;
+    src: url('/theme_seccua/static/src/fonts/HelveticaNeue/HelveticaNeueLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'HelveticaNeue';
+    font-weight: $font-weight-normal;
+    src: url('/theme_seccua/static/src/fonts/HelveticaNeue/HelveticaNeueMed.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'HelveticaNeue';
+    font-weight: $font-weight-bold;
+    src: url('/theme_seccua/static/src/fonts/HelveticaNeue/HelveticaNeuBold.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-weight: $font-weight-light;
+    letter-spacing: 0.18px;
+}
+
+//------------------------------------------------------------------------------
+// Text selection
+//------------------------------------------------------------------------------
+::selection {
+    background: rgba(theme-color('primary'), .2);
+}
+::-moz-selection {
+    background: rgba(theme-color('primary'), .2);
+}
+
+//------------------------------------------------------------------------------
+// Dropdown
+//------------------------------------------------------------------------------
+%dr-dropdown-toggle {
+    font-family: FontAwesome;
+    border: 0;
+    vertical-align: bottom;
+}
+.dropleft .dropdown-toggle::before {
+    content: "\f104";
+    @extend %dr-dropdown-toggle;
+}
+.dropright .dropdown-toggle::after {
+    content: "\f105";
+    @extend %dr-dropdown-toggle;
+}
+.dropup .dropdown-toggle::after {
+    content: "\f106";
+    @extend %dr-dropdown-toggle;
+}
+.dropdown-toggle::after {
+    content: "\f107";
+    @extend %dr-dropdown-toggle;
+}
+.dropdown-menu {
+    box-shadow: $dropdown-box-shadow;
+}
+
+//------------------------------------------------------------------------------
+// Headings
+//------------------------------------------------------------------------------
+h1 {
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    font-weight: $font-weight-bold;
+}
+
+h2 {
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    font-weight: $font-weight-light;
+}
+
+drparaheading {
+    display: block;
+    font-size: 30px;
+    letter-spacing: 0.3px;
+    font-weight: $font-weight-normal;
+    color: theme-color('alpha');
+}
+
+drfacts {
+    display: block;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    font-weight: $font-weight-bold;
+    color: theme-color('beta');
+}
+
+drbenefits {
+    display: block;
+    font-size: 30px;
+    letter-spacing: 0.3px;
+    font-weight: $font-weight-bold;
+    color: theme-color('alpha');
+    text-transform: uppercase;
+}
+
+drlargebody {
+    display: block;
+    font-size: 30px;
+    letter-spacing: 0.3px;
+    font-weight: $font-weight-light;
+    color: gray('black');
+}
+
+drbody {
+    display: block;
+    font-size: 24px;
+    letter-spacing: 0.24px;
+    font-weight: $font-weight-light;
+    color: gray('black');
+}
+
+drsmallbody {
+    display: block;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    font-weight: $font-weight-light;
+    color: gray('black');
+}
+
+drslidertext {
+    display: block;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    font-weight: $font-weight-normal;
+    color: gray('black');
+}
+
+drcta {
+    display: block;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    font-weight: $font-weight-light;
+    color: gray('black');
+}

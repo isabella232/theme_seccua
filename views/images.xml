@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="s_number" model="theme.ir.attachment">
+        <field name="key">theme_seccua.s_number</field>
+        <field name="name">theme_seccua.s_number</field>
+        <field name="url">/theme_seccua/static/src/img/content/s_number.png</field>
+    </record>
+
+</odoo>

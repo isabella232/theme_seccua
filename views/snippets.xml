@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="snippets" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_structure']" position="before">
+            <div id="snippet_specials" class="o_panel">
+                <div class="o_panel_header">
+                    <i class="fa fa-cubes"/> Specials
+                </div>
+                <div class="o_panel_body">
+                    <t t-snippet="theme_seccua.s_animated_boxes" t-thumbnail="/theme_seccua/static/src/img/snippets_thumb/s_animated_boxes.png"/>
+                    <t t-snippet="theme_seccua.s_numbers" t-thumbnail="/theme_seccua/static/src/img/snippets_thumb/s_numbers.png"/>
+                    <t t-snippet="theme_seccua.s_dr_banner" t-thumbnail="/theme_seccua/static/src/img/snippets_thumb/s_dr_banner.png"/>
+                    <t t-snippet="theme_seccua.s_dr_icon_block" t-thumbnail="/theme_seccua/static/src/img/snippets_thumb/s_dr_icon_block.png"/>
+                    <t t-snippet="theme_seccua.s_dr_quotes" t-thumbnail="/theme_seccua/static/src/img/snippets_thumb/s_dr_quotes.png"/>
+                    <t t-snippet="theme_seccua.s_dr_info_carousel" t-thumbnail="/theme_seccua/static/src/img/snippets_thumb/s_dr_info_carousel.png"/>
+                    <t t-snippet="theme_seccua.s_dr_tabs" t-thumbnail="/theme_seccua/static/src/img/snippets_thumb/s_dr_tabs.png"/>
+                    <t t-snippet="theme_seccua.s_dr_video_snippet" t-thumbnail="/theme_seccua/static/src/img/snippets_thumb/s_dr_video_snippet.png"/>
+                    <t t-snippet="theme_seccua.s_d_s_carousel_snippet" t-thumbnail="/theme_seccua/static/src/img/snippets_thumb/s_dr_video_snippet.png"/>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="s_form_builder_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-js="s_form_builder_placeholder" data-selector="input.o_website_form_input, textarea.o_website_form_input">
+                <we-button data-placeholder="" data-no-preview="true"><i class="fa fa-fw fa-cog"/> Set Placeholder</we-button>
+                <we-button data-default-value="" data-no-preview="true"><i class="fa fa-fw fa-cog"/> Set Default Value</we-button>
+            </div>
+            <div data-selector=".o_website_form_send">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-eyedropper"/> Color</we-toggler>
+                    <we-collapse>
+                        <we-button data-select-class="btn-link">Link</we-button>
+                        <we-button data-select-class="btn-alpha">Apha</we-button>
+                        <we-button data-select-class="btn-beta">Beta</we-button>
+                        <we-button data-select-class="btn-gamma">Gamma</we-button>
+                        <we-button data-select-class="btn-delta">Delta</we-button>
+                        <we-button data-select-class="btn-epsilon">Epsilon</we-button>
+                        <we-button data-select-class="btn-primary">Primary</we-button>
+                        <we-button data-select-class="btn-success">Success</we-button>
+                        <we-button data-select-class="btn-info">Info</we-button>
+                        <we-button data-select-class="btn-warning">Warning</we-button>
+                        <we-button data-select-class="btn-danger">Danger</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-arrows"/> Size</we-toggler>
+                    <we-collapse>
+                        <we-button data-select-class="btn-sm">Small</we-button>
+                        <we-button data-select-class="btn-md">Medium</we-button>
+                        <we-button data-select-class="btn-lg">Large</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-magic"/> Style</we-toggler>
+                    <we-collapse>
+                        <we-button data-select-class="">Default</we-button>
+                        <we-button data-select-class="rounded-circle">Rounded</we-button>
+                        <we-button data-select-class="flat">Flat</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

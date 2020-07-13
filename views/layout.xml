@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!--
+    ============================================================================
+    Login Page
+    ============================================================================
+    -->
+    <template id="login_layout" inherit_id="website.login_layout" name="Website Login Layout" priority="20">
+        <xpath expr="//div[hasclass('oe_website_login_container')]" position="before">
+            <div class="oe_structure"/>
+        </xpath>
+        <xpath expr="//div[hasclass('oe_website_login_container')]" position="after">
+            <div class="oe_structure"/>
+        </xpath>
+    </template>
+
+    <template id="layout" name="Main layout" inherit_id="website.layout">
+        <xpath expr="//head/meta" position="before">
+            <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="bfcba69b-13f7-4e8f-adff-b55ba29ab1ab" data-blockingmode="auto" type="text/javascript"></script>
+        </xpath>
+        <!-- <xpath expr="//div[@id='wrapwrap']" position="after">
+            <script id="CookieDeclaration" src="https://consent.cookiebot.com/bfcba69b-13f7-4e8f-adff-b55ba29ab1ab/cd.js" type="text/javascript" async=""></script>
+        </xpath> -->
+    </template>
+
+    <!--
+    ============================================================================
+    Footer
+    ============================================================================
+    -->
+    <template id="footer" inherit_id="website.footer_custom" name="Footer">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div class="container-fluid bg-white py-4">
+                <div class="row">
+                    <div class="col-12 text-right">
+                        <ul class="list-inline dr-followus-icon mb-0">
+                            <li t-if="website.social_facebook" class="list-inline-item">
+                                <a t-att-href="website.social_facebook" target="_blank" rel="noopener" data-toggle="tooltip" title="Facebook" aria-label="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li t-if="website.social_twitter" class="list-inline-item">
+                                <a t-att-href="website.social_twitter" target="_blank" rel="noopener" data-toggle="tooltip" title="Twitter" aria-label="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li t-if="website.social_linkedin" class="list-inline-item">
+                                <a t-att-href="website.social_linkedin" target="_blank" rel="noopener" data-toggle="tooltip" title="Linkedin" aria-label="Linkedin">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li t-if="website.social_youtube" class="list-inline-item">
+                                <a t-att-href="website.social_youtube" target="_blank" rel="noopener" data-toggle="tooltip" title="Youtube" aria-label="Youtube">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li t-if="website.social_instagram" class="list-inline-item">
+                                <a t-att-href="website.social_instagram" target="_blank" rel="noopener" data-toggle="tooltip" title="Instagram" aria-label="Instagram">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li t-if="website.social_github" class="list-inline-item">
+                                <a t-att-href="website.social_github" target="_blank" rel="noopener" data-toggle="tooltip" title="Github" aria-label="Github">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                <section class="s_text_block pt64 pb48">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-5">
+                                <h4 class="mb-3">
+                                    DAS IST SECCUA
+                                </h4>
+                                <p class="lead">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                                </p>
+                                <p class="text-muted">
+                                    Small body - sample text
+                                </p>
+                            </div>
+                            <div class="col-12 offset-lg-1 col-lg-6">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 mb-4">
+                                        <h6 class="mb-2">
+                                            Account Info
+                                        </h6>
+                                        <ul class="list-unstyled">
+                                            <li class="my-1">
+                                                <a href="#">Your account</a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#">Refunds &amp; replacements</a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#">Order tracking</a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#">Delivery info</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mb-4">
+                                        <h6 class="mb-2">
+                                            Contact Us
+                                        </h6>
+                                        <ul class="list-unstyled">
+                                            <li class="my-1">
+                                                <a href="#">All services</a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="/aboutus">About Us</a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="/contactus">Contact Us</a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#">Privacy Policy</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mb-4">
+                                        <h6 class="mb-2">
+                                            Useful Links
+                                        </h6>
+                                        <ul class="list-unstyled">
+                                            <li class="my-1">
+                                                <a href="#">Blog</a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#">Community</a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#">Forums</a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#">Pricing and Plans</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mb-4">
+                                        <h6 class="mb-2">
+                                            Information
+                                        </h6>
+                                        <ul class="list-unstyled">
+                                            <li class="my-1">
+                                                <a href="#">All services</a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="/aboutus">About Us</a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="/contactus">Contact Us</a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#">Privacy Policy</a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#">Terms of Use</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-12 text-center">
+                                <ul class="list-inline dr-followus-icon mb-0">
+                                    <li t-if="website.social_facebook" class="list-inline-item">
+                                        <a t-att-href="website.social_facebook" target="_blank" rel="noopener" data-toggle="tooltip" title="Facebook" aria-label="Facebook">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li t-if="website.social_twitter" class="list-inline-item">
+                                        <a t-att-href="website.social_twitter" target="_blank" rel="noopener" data-toggle="tooltip" title="Twitter" aria-label="Twitter">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li t-if="website.social_linkedin" class="list-inline-item">
+                                        <a t-att-href="website.social_linkedin" target="_blank" rel="noopener" data-toggle="tooltip" title="Linkedin" aria-label="Linkedin">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li t-if="website.social_youtube" class="list-inline-item">
+                                        <a t-att-href="website.social_youtube" target="_blank" rel="noopener" data-toggle="tooltip" title="Youtube" aria-label="Youtube">
+                                            <i class="fa fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li t-if="website.social_instagram" class="list-inline-item">
+                                        <a t-att-href="website.social_instagram" target="_blank" rel="noopener" data-toggle="tooltip" title="Instagram" aria-label="Instagram">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li t-if="website.social_github" class="list-inline-item">
+                                        <a t-att-href="website.social_github" target="_blank" rel="noopener" data-toggle="tooltip" title="Github" aria-label="Github">
+                                            <i class="fa fa-github"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="replace">
+            <div class="o_footer_copyright">
+                <div class="container my-2">
+                    <div class="row justify-content-between">
+                        <div class="col-auto">
+                            <span>Copyright &amp;copy;</span> <span t-field="res_company.name" itemprop="name">Company name</span>
+                        </div>
+                        <div class="col-auto">
+                            <ul class="list-inline my-3">
+                                <li class="list-inline-item mx-2"><a href="#">Home</a></li>
+                                <li class="list-inline-item mx-2"><a href="#">About Us</a></li>
+                                <li class="list-inline-item mx-2"><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dr-contact-flags">
+                <a href="#" class="d-flex p-3 mt-2 flag shadow-sm align-items-center h6">
+                    <span class="fa fa-phone text-primary mr-3"></span>
+                    Call
+                </a>
+                <a href="#" class="d-flex p-3 mt-2 flag shadow-sm align-items-center h6">
+                    <span class="fa fa-envelope-o text-primary mr-3"></span>
+                    Email
+                </a>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

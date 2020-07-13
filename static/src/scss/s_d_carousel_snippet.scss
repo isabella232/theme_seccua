@@ -1,0 +1,36 @@
+.s_d_carousel_snippet {
+    margin-bottom: 3.3rem;
+    .d_carousel_controller_block {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 4rem;
+        .d_carousel_controller_row {
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+            .d_target_col {
+                cursor: pointer;
+            }
+        }
+    }
+    .carousel-indicators {
+        bottom: -3rem;
+        li {
+            &.active {
+                background-color: theme-color('primary');
+            }
+            &:hover {
+                background-color: gray('600') !important;
+            }
+            border: 1px solid gray('300');
+            background-color: gray('500');
+            box-shadow: none !important;
+            width: 10px;
+            height: 10px !important;
+            border-radius: 10px !important;
+            border-top: none !important;
+            border-bottom: none !important;
+        }
+    }
+}
