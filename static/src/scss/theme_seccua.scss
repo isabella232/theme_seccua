@@ -51,17 +51,10 @@
             }
         }
     }
-    main {
+    .homepage {
         section:nth-child(1){
             p {
                 font-size: 1.2rem;
-            }
-        }
-        section:nth-child(2){
-            .s_title_default {
-                font {
-                    font-size: 50px!important;
-                }
             }
         }
         section:nth-child(3){
@@ -91,13 +84,6 @@
                     width: 50%;
                     float: left;
                     padding: 10px 10px!important;
-                }
-            }
-        }
-        section:nth-child(5){
-            .s_title_default {
-                font {
-                    font-size: 50px!important;
                 }
             }
         }
@@ -176,7 +162,60 @@
         top: 60px;
     }
 }
-
+.s_title_default {
+    font {
+        font-size: 50px!important;
+    }
+}
+section.pt16.pb24 {
+    background: #f4f2ee;
+    margin: 60px 0;
+    h1 {
+        line-height: 2rem;
+        span:first-child {
+            margin: 40px 0 0;
+            display: block;
+        }
+    }
+}
+.text-delta {
+    position: relative;
+    text-transform: uppercase;
+    display: block;
+    &:after {
+        width: 25px;
+        content: '';
+        height: 3px;
+        background: #feae78;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+    }
+}
+.s_text_image {
+    h3 {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    p, b {
+        font-size: 1.2rem!important;
+        font-weight: 100!important;
+    }
+    img {
+        width: 100%;
+        will-change: transform;
+        transform-origin: 50% 100%;
+        transition: all .3s ease;
+    }
+    @media (min-width: 992px) {
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
 //------------------------------------------------------------------------------
 // Footer
 //------------------------------------------------------------------------------
@@ -217,6 +256,18 @@ $footer-yiq-color: color-yiq(color('footer'));
     .o_footer_copyright {
         background-color: gray('white');
         color: theme-color('alpha');
+        .col-auto {
+            @media (max-width: 767px) {
+                width: 100%;
+                text-align: center;
+            }
+            ul {
+                @media (max-width: 767px) {
+                    margin: 0!important;
+                }
+            }
+
+        }
     }
 }
 
