@@ -1,11 +1,24 @@
 .s_dr_icon_block {
     .card {
         margin-top: 4rem;
+        height: inherit!important;
+        border: 1px solid #eaecef!important;
+        box-shadow: none!important;
+        background: #f7f7f7;
+        p:nth-child(3) {
+            height: 100px;
+        }
     }
     .icon {
         height: 102px;
         width: 102px;
-        margin-top: -4rem;
+        margin: 0!important;
+        background-color: #fea569 !important;
+    }
+    .col-12:nth-child(2) {
+        .cart {
+            background-color: #e8ecef;
+        }
     }
 }
 

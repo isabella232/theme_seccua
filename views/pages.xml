@@ -109,7 +109,7 @@
                             <h6> </h6>
                             </div>
                             <div class="col-lg-3 text-center pt24 pb24">
-                            <div class="s_number display-4 text-alpha oe_img_bg oe_custom_bg" style="text-align: center; background-image: url(&quot;/theme_seccua/static/src/img/content/s_number.png&quot;); background-size: cover; background-position: 50% 50%;">
+                            <div class="s_number display-4 text-alpha oe_img_bg oe_custom_bg" style="text-align: center; background-image: url(' /theme_seccua/static/src/img/content/s_number.png' ); background-size: cover; background-position: 50% 50%;">
                                 <font style="font-size: 36px;">Verkauf</font>
                             </div>
                             <h6> </h6>
@@ -537,7 +537,7 @@
             </t>
         </field>
     </record>
-     <!-- === Contact Page === -->
+     <!-- === Unsere Page === -->
     <record id="unsere-vision_page" model="website.page">
         <field name="name">Unsere Vision</field>
         <field name="website_published">True</field>
@@ -612,6 +612,1274 @@
                         </div>
                     </div>
                 </section>
+                    <div class="oe_structure" />
+                </t>
+            </t>
+        </field>
+    </record>
+    <!-- === Contact Page === -->
+    <record id="about_page" model="website.page">
+        <field name="name">About us</field>
+        <field name="website_published">True</field>
+        <field name="url">/about</field>
+        <field name="type">qweb</field>
+        <field name="key">theme_seccua.about_page</field>
+        <field name="arch" type="xml">
+            <t t-name="theme_seccua.about_page_template"> 
+                <t t-call="website.layout">
+                    <div class="oe_structure" />
+                </t>
+            </t>
+        </field>
+    </record>
+     <!-- === Webinar Page === -->
+    <record id="webinar_page" model="website.page">
+        <field name="name">Unsere Vision</field>
+        <field name="website_published">True</field>
+        <field name="url">/webinarpage</field>
+        <field name="type">qweb</field>
+        <field name="key">theme_seccua.webinar_page</field>
+        <field name="arch" type="xml">
+            <t t-name="theme_seccua.webinar_page_template"> 
+                <t t-call="website.layout">
+                <section class="s_dr_banner oe_img_bg oe_custom_bg" style="background-image: url('/theme_seccua/static/src/img/brush-curved.png');" data-name="Banner">
+                    <div class="container-fluid px-0">
+                    <div class="row align-items-center s_nb_column_fixed s_col_no_bgcolor custom-row no-gutters">
+                        <div class="col-12 col-md-4 custom-col oe_img_bg oe_custom_bg pt96 col-lg-7 pb104" style="background-image: url('/theme_seccua/static/src/img/Aquarell-Wolke-weiss-Ausschnitt-1400px.png');">
+                        <div class="py-5 px-4 px-md-5">
+                            <div class="s_title" data-name="Title">
+                            <h2 class="mb-4 s_title_default"> Seccua Webinare</h2>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="pt32 pb0" data-name="Title" style="">
+                    <div class="container">
+                    <div class="row s_nb_column_fixed">
+                        <div class="col-lg-12 s_title pt16 pb0" style="text-align: center;">
+                        <h1 class="s_title_default" style="text-align: left; ">
+                            <font style="font-size: 62px;">Webinare zum </font>
+                        </h1>
+                        <h1 class="s_title_default" style="text-align: left; ">
+                            <font style="font-size: 62px;">Seccua Partner System</font>
+                        </h1>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pb32 o_animate pt40 o_anim_fade_in o_animated" data-name="Image - Text" style="animation-name: o_anim_fade_in; visibility: visible; animation-play-state: running;">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <img src="/theme_seccua/static/src/img/seccua-academy.jpg" class="img img-fluid mx-auto" alt="Odoo • Bild und Text" data-original-title="" title="" aria-describedby="tooltip757305" style=""/>
+                        </div>
+                        <div class="col-lg-6 pt16 pb16">
+                        <h3><font class="text-delta" style="font-size: 18px;">03. Juli 2020, 15:00 Uhr</font><br/>Sauberes, gesundes Wasser - </h3>
+                        <h3>Seccua Partner System</h3>
+                        <p>Lernen Sie Alles über das Seccua Partner System, die Seccua Wasserfiltration und machen Sie mit bei unserer Mission: miteinander gesund leben. </p>
+                        <div class="s_btn pt16 pb16 text-left" data-name="Button" style="text-align: left; ">
+                            <a href="https://webinarseccuapartnersystem0307.gr8.com/" class="btn btn-alpha rounded-circle" data-original-title="" title="" aria-describedby="tooltip190052" style="">Zur Anmeldung</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pt32 pb32 bg-100" data-name="Text - Image" style="">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <h3 style="letter-spacing: 0.18px;">
+                            <font class="text-delta" style="font-size: 18px;">07. Juli 2020, 15:00 Uhr</font>
+                            <br/>
+                        </h3>
+                        <h3 style="letter-spacing: 0.18px;">Sauberes, gesundes Trinkwasser - </h3>
+                        <h3 style="letter-spacing: 0.18px;">Seccua Partner System</h3>
+                        <h3 style="letter-spacing: 0.18px;"></h3>
+                        <p style="color: rgb(0, 0, 0); font-size: 14px; letter-spacing: 0.18px;">
+                            <span style="letter-spacing: 0.18px;">Lernen Sie Alles über das Seccua Partner System, die Seccua Wasserfiltration und machen Sie mit bei unserer Mission: miteinander gesund leben. </span>
+                            <br/>
+                        </p>
+                        <div class="s_btn text-left pt16 pb16" data-name="Buttons">
+                            <a href="https://webinarseccuapartnersystem0707.gr8.com/" class="btn btn-primary rounded-circle" data-original-title="" title="" aria-describedby="tooltip18747">Zur Anmeldung</a>
+                        </div>
+                        <p style="color: rgb(0, 0, 0); font-size: 14px; letter-spacing: 0.18px;">
+                            <br/>
+                        </p>
+                        <p style="color: rgb(0, 0, 0); font-size: 14px; letter-spacing: 0.18px;">
+                            <br/>
+                        </p>
+                        </div>
+                        <div class="col-lg-6 pt16 pb16">
+                        <img src="/theme_seccua/static/src/img/seccua-academy.jpg" class="img img-fluid mx-auto" alt="Odoo • Text und Bild" data-original-title="" title="" aria-describedby="tooltip31458"/>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pt32 pb32" data-name="Image - Text">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <img src="/theme_seccua/static/src/img/seccua-academy.jpg" class="img img-fluid mx-auto" alt="Odoo • Bild und Text"/>
+                        </div>
+                        <div class="col-lg-6 pt16 pb16">
+                        <h3 style="letter-spacing: 0.18px;">
+                            <font class="text-delta" style="font-size: 18px;">10. Juli 2020, 15:00 Uhr </font>
+                            <br/>
+                        </h3>
+                        <h3 style="letter-spacing: 0.18px;">Sauberes, gesundes Trinkwasser - </h3>
+                        <h3 style="letter-spacing: 0.18px;">Seccua Partner System</h3>
+                        <h3 style="letter-spacing: 0.18px;"></h3>
+                        <h3 style="letter-spacing: 0.18px;"></h3>
+                        <p style="color: rgb(0, 0, 0); font-size: 14px; letter-spacing: 0.18px;">
+                            <span style="letter-spacing: 0.18px; font-size: 0.875rem;">Lernen Sie Alles über das Seccua Partner System, die Seccua Wasserfiltration und machen Sie mit bei unserer Mission: miteinander gesund leben. </span>
+                        </p>
+                        <div class="s_btn text-left pt16 pb16" data-name="Button">
+                            <a href="https://webinarseccuapartnersystem1007.gr8.com/" class="btn btn-primary rounded-circle" data-original-title="" title="">Zur Anmeldung</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                    <div class="oe_structure" />
+                </t>
+            </t>
+        </field>
+    </record>
+
+
+
+     <!-- === Webinar Page === -->
+    <record id="partner_registrierung_page" model="website.page">
+        <field name="name">Partner Registrierung</field>
+        <field name="website_published">True</field>
+        <field name="url">/partner_registrierung</field>
+        <field name="type">qweb</field>
+        <field name="key">theme_seccua.partner_registrierung_page</field>
+        <field name="arch" type="xml">
+            <t t-name="theme_seccua.partner_registrierung_page_template"> 
+                <t t-call="website.layout">
+                <p>
+                    <a href="/en/danke-registrierung">/danke-registrierung</a>
+                </p>
+                <section class="s_dr_banner oe_img_bg oe_custom_bg" style="background-image: url('/theme_seccua/static/src/img/partnerlogin-bg.jpeg');" data-name="Banner">
+                    <div class="container-fluid px-0">
+                    <div class="row align-items-center s_nb_column_fixed s_col_no_bgcolor custom-row no-gutters">
+                        <div class="col-12 col-md-4 custom-col oe_img_bg oe_custom_bg pb104 pt112 col-lg-6" style="background-image: url('/theme_seccua/static/src/img/Aquarell-Wolke-weiss-Ausschnitt-1400px.png');">
+                        <div class="py-5 px-4 px-md-5">
+                            <div class="s_title" data-name="Title">
+                            <h2 class="mb-4 s_title_default"><a href="/en/agb" data-original-title="" title="" aria-describedby="tooltip806998"></a>Partner Registrierung</h2>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_dr_icon_block pt32 pb32" data-name="Icon Block" style="">
+                    <div class="container">
+                    <div class="row s_col_no_bgcolor">
+                        <div class="col-12 col-md-6 col-lg-4 pb-5">
+                        <div class="card p-4 h-100 shadow border-0">
+                            <span class="bg-gamma text-white fa fa-2x icon mb-4 mx-auto rounded-circle shadow-sm fa-group"></span>
+                            <drparaheading class="mt-3">Werden Sie unser Partner!</drparaheading>
+                            <p class="mt-3">Registrieren Sie sich mit dem unten aufgeführten Partner Registrierungsformular einmalig und erhalten Sie exklusiven Zugriff auf unsere Partner Wissensbox. Bitte halten Sie für die Registrierung einige Nachweise bereit. </p>
+                            <p class="mt-3">(Ihr Zeitaufwand: ca. 15 Minuten)</p>
+                            <div class="s_btn pt16 pb16 text-left" data-name="Buttons">
+                            <a href="#formular" class="btn btn-primary rounded-circle" data-original-title="" title="" aria-describedby="tooltip840417" style="">Jetzt registrieren</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-5">
+                        <div class="card p-4 h-100 shadow border-0">
+                            <span class="bg-gamma text-white fa fa-2x icon mb-4 mx-auto rounded-circle shadow-sm fa-phone"></span>
+                            <drparaheading class="mt-3">Jetzt Beratung anfordern.</drparaheading>
+                            <p class="mt-3">Seccua ist für Sie da. Lassen Sie sich von uns beraten. Wir rufen Sie an!</p>
+                            <p class="mt-3">
+                            <span style="letter-spacing: 0.18px;">(Ihr Zeitaufwand: ca. 2 Minuten)</span>
+                            <br/>
+                            </p>
+                            <div class="s_btn pt16 pb16 text-left" data-name="Buttons">
+                            <a href="/en/contactus" class="btn btn-primary rounded-circle" data-original-title="" title="" aria-describedby="tooltip840417" style="">Jetzt Kontakt aufnehmen</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-5">
+                        <div class="card p-4 h-100 shadow border-0">
+                            <span class="bg-gamma text-white fa fa-2x icon mb-4 mx-auto rounded-circle shadow-sm fa-chevron-right"></span>
+                            <drparaheading class="mt-3">Sie sind schon Partner?</drparaheading>
+                            <p class="mt-3">Dann geht es hier zur Anmeldung:</p>
+                            <div class="s_btn pt16 pb16 text-left" data-name="Buttons">
+                            <a href="/en/web/login" class="btn btn-primary rounded-circle" data-original-title="" title="" aria-describedby="tooltip840417" style="">Jetzt anmelden</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <p></p>
+                <form action="/en/website_form/" method="post" class="s_website_form container-fluid mt32 o_fake_not_editable" enctype="multipart/form-data" data-name="Form Builder" data-model_name="crm.lead" data-success_page="/danke-registrierung" _lpchecked="1" id="formular" data-anchor="true">
+                    <div class="container">
+                    <h1 class="o_form_heading o_fake_editable">Partner Registrierung</h1>
+                    <h1 class="o_form_heading o_fake_editable">
+                        <br/>
+                    </h1>
+                    <div class="row form-group form-field o_website_form_required_custom">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="title">
+                                Titel
+                            </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <select class="form-control o_website_form_input" name="title" required="false">
+                            <option value="4">
+                                        Doktor
+                                    </option>
+                            <option value="6">
+                                        Doktoren
+                                    </option>
+                            <option value="7">
+                                        Dr.
+                                    </option>
+                            <option value="1">
+                                        Frau
+                                    </option>
+                            <option value="2">
+                                        Frl.
+                                    </option>
+                            <option value="3" selected="1">
+                                        Herr
+                                    </option>
+                            <option value="5">
+                                        Professor
+                                    </option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field o_website_form_required_custom o_fake_not_editable">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="contact_name">Ansprechpartner</label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="contact_name" required="" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg=='); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;"/>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field o_fake_not_editable">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="street">
+                                Straße *                          </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="street"/>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field o_fake_not_editable">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="zip">
+                                PLZ *                          </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="zip"/>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field o_fake_not_editable">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="city">Ort/Stadt *  </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="city"/>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="country_id">
+                                Land *
+                            </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <select class="form-control o_website_form_input" name="country_id" required="false">
+                            <option value="3">
+                                        Afghanistan
+                                    </option>
+                            <option value="6">
+                                        Albanien
+                                    </option>
+                            <option value="62">
+                                        Algerien
+                                    </option>
+                            <option value="11">
+                                        Amerikanisch-Samoa
+                                    </option>
+                            <option value="1">
+                                        Andorra
+                                    </option>
+                            <option value="8">
+                                        Angola
+                                    </option>
+                            <option value="5">
+                                        Anguilla
+                                    </option>
+                            <option value="9">
+                                        Antarktis
+                                    </option>
+                            <option value="4">
+                                        Antigua und Barbados
+                                    </option>
+                            <option value="10">
+                                        Argentinien
+                                    </option>
+                            <option value="7">
+                                        Armenien
+                                    </option>
+                            <option value="14">
+                                        Aruba
+                                    </option>
+                            <option value="16">
+                                        Aserbaidschan
+                                    </option>
+                            <option value="13">
+                                        Australien
+                                    </option>
+                            <option value="32">
+                                        Bahamas
+                                    </option>
+                            <option value="23">
+                                        Bahrain
+                                    </option>
+                            <option value="19">
+                                        Bangladesch
+                                    </option>
+                            <option value="18">
+                                        Barbados
+                                    </option>
+                            <option value="20">
+                                        Belgien
+                                    </option>
+                            <option value="37">
+                                        Belize
+                                    </option>
+                            <option value="25">
+                                        Benin
+                                    </option>
+                            <option value="27">
+                                        Bermudas
+                                    </option>
+                            <option value="33">
+                                        Bhutan
+                                    </option>
+                            <option value="29">
+                                        Bolivien
+                                    </option>
+                            <option value="30">
+                                        Bonaire, Sint Eustatius und Saba
+                                    </option>
+                            <option value="17">
+                                        Bosnien und Herzegowina
+                                    </option>
+                            <option value="35">
+                                        Botswana
+                                    </option>
+                            <option value="34">
+                                        Bouvetinsel
+                                    </option>
+                            <option value="31">
+                                        Brasilien
+                                    </option>
+                            <option value="105">
+                                        Britisches Territorium im Indischen Ozean
+                                    </option>
+                            <option value="28">
+                                        Brunei Darussalam
+                                    </option>
+                            <option value="22">
+                                        Bulgarien
+                                    </option>
+                            <option value="21">
+                                        Burkina Faso
+                                    </option>
+                            <option value="24">
+                                        Burundi
+                                    </option>
+                            <option value="123">
+                                        Cayman Inseln
+                                    </option>
+                            <option value="46">
+                                        Chile
+                                    </option>
+                            <option value="48">
+                                        China
+                                    </option>
+                            <option value="45">
+                                        Cookinseln
+                                    </option>
+                            <option value="50">
+                                        Costa Rica
+                                    </option>
+                            <option value="53">
+                                        Curaçao
+                                    </option>
+                            <option value="41">
+                                        Demokratische Republik Kongo
+                                    </option>
+                            <option value="57" selected="1">
+                                        Deutschland
+                                    </option>
+                            <option value="60">
+                                        Dominika
+                                    </option>
+                            <option value="61">
+                                        Dominikanische Republik
+                                    </option>
+                            <option value="58">
+                                        Dschibuti
+                                    </option>
+                            <option value="59">
+                                        Dänemark
+                                    </option>
+                            <option value="209">
+                                        El Salvador
+                                    </option>
+                            <option value="44">
+                                        Elfenbeinküste
+                                    </option>
+                            <option value="63">
+                                        Equador
+                                    </option>
+                            <option value="67">
+                                        Eritrea
+                                    </option>
+                            <option value="64">
+                                        Estland
+                                    </option>
+                            <option value="15">
+                                        Falklandinseln
+                                    </option>
+                            <option value="72">
+                                        Falklandinseln
+                                    </option>
+                            <option value="71">
+                                        Fidschi-Inseln
+                                    </option>
+                            <option value="70">
+                                        Finnland
+                                    </option>
+                            <option value="75">
+                                        Frankreich
+                                    </option>
+                            <option value="79">
+                                        Französisch-Guayana
+                                    </option>
+                            <option value="174">
+                                        Französisch-Polynesien
+                                    </option>
+                            <option value="215">
+                                        Französische Süd- und Antarktisgebiete
+                                    </option>
+                            <option value="74">
+                                        Färöer Inseln
+                                    </option>
+                            <option value="76">
+                                        Gabun
+                                    </option>
+                            <option value="84">
+                                        Gambia
+                                    </option>
+                            <option value="78">
+                                        Georgien
+                                    </option>
+                            <option value="80">
+                                        Ghana
+                                    </option>
+                            <option value="81">
+                                        Gibraltar
+                                    </option>
+                            <option value="77">
+                                        Grenada
+                                    </option>
+                            <option value="88">
+                                        Griechenland
+                                    </option>
+                            <option value="83">
+                                        Grönland
+                                    </option>
+                            <option value="86">
+                                        Guadeloupe
+                                    </option>
+                            <option value="91">
+                                        Guam
+                                    </option>
+                            <option value="90">
+                                        Guatemala
+                                    </option>
+                            <option value="82">
+                                        Guernsey
+                                    </option>
+                            <option value="85">
+                                        Guinea
+                                    </option>
+                            <option value="92">
+                                        Guinea-Bissau
+                                    </option>
+                            <option value="93">
+                                        Guyana
+                                    </option>
+                            <option value="98">
+                                        Haiti
+                                    </option>
+                            <option value="95">
+                                        Heard und die McDonaldinseln
+                                    </option>
+                            <option value="96">
+                                        Honduras
+                                    </option>
+                            <option value="94">
+                                        Hongkong
+                                    </option>
+                            <option value="104">
+                                        Indien
+                                    </option>
+                            <option value="100">
+                                        Indonesien
+                                    </option>
+                            <option value="106">
+                                        Irak
+                                    </option>
+                            <option value="107">
+                                        Iran
+                                    </option>
+                            <option value="101">
+                                        Irland
+                                    </option>
+                            <option value="108">
+                                        Island
+                                    </option>
+                            <option value="103">
+                                        Isle of Man
+                                    </option>
+                            <option value="102">
+                                        Israel
+                                    </option>
+                            <option value="109">
+                                        Italien
+                                    </option>
+                            <option value="111">
+                                        Jamaika
+                                    </option>
+                            <option value="113">
+                                        Japan
+                                    </option>
+                            <option value="245">
+                                        Jemen
+                                    </option>
+                            <option value="110">
+                                        Jersey
+                                    </option>
+                            <option value="112">
+                                        Jordanien
+                                    </option>
+                            <option value="239">
+                                        Jungferninseln (GB)
+                                    </option>
+                            <option value="240">
+                                        Jungferninseln (USA)
+                                    </option>
+                            <option value="116">
+                                        Kambodscha
+                                    </option>
+                            <option value="47">
+                                        Kamerun
+                                    </option>
+                            <option value="38">
+                                        Kanada
+                                    </option>
+                            <option value="52">
+                                        Kapverdische Inseln
+                                    </option>
+                            <option value="124">
+                                        Kasachstan
+                                    </option>
+                            <option value="186">
+                                        Katar
+                                    </option>
+                            <option value="114">
+                                        Kenia
+                                    </option>
+                            <option value="115">
+                                        Kirgisistan
+                                    </option>
+                            <option value="117">
+                                        Kiribati
+                                    </option>
+                            <option value="39">
+                                        Kokos-Inseln
+                                    </option>
+                            <option value="49">
+                                        Kolumbien
+                                    </option>
+                            <option value="118">
+                                        Komoren
+                                    </option>
+                            <option value="42">
+                                        Kongo
+                                    </option>
+                            <option value="250">
+                                        Kosovo
+                                    </option>
+                            <option value="97">
+                                        Kroatien
+                                    </option>
+                            <option value="51">
+                                        Kuba
+                                    </option>
+                            <option value="122">
+                                        Kuwait
+                                    </option>
+                            <option value="187">
+                                        La Réunion
+                                    </option>
+                            <option value="125">
+                                        Laos
+                                    </option>
+                            <option value="131">
+                                        Lesotho
+                                    </option>
+                            <option value="134">
+                                        Lettland
+                                    </option>
+                            <option value="126">
+                                        Libanon
+                                    </option>
+                            <option value="130">
+                                        Liberia
+                                    </option>
+                            <option value="135">
+                                        Libyen
+                                    </option>
+                            <option value="128">
+                                        Liechtenstein
+                                    </option>
+                            <option value="132">
+                                        Litauen
+                                    </option>
+                            <option value="133">
+                                        Luxemburg
+                                    </option>
+                            <option value="147">
+                                        Macao
+                                    </option>
+                            <option value="141">
+                                        Madagaskar
+                                    </option>
+                            <option value="155">
+                                        Malawi
+                                    </option>
+                            <option value="157">
+                                        Malaysien
+                                    </option>
+                            <option value="154">
+                                        Malediven
+                                    </option>
+                            <option value="144">
+                                        Mali
+                                    </option>
+                            <option value="152">
+                                        Malta
+                                    </option>
+                            <option value="136">
+                                        Marokko
+                                    </option>
+                            <option value="142">
+                                        Marschall-Inseln
+                                    </option>
+                            <option value="149">
+                                        Martinique
+                                    </option>
+                            <option value="150">
+                                        Mauretanien
+                                    </option>
+                            <option value="153">
+                                        Mauritius
+                                    </option>
+                            <option value="246">
+                                        Mayotte
+                                    </option>
+                            <option value="143">
+                                        Mazedonien, ehem. jugoslawische Republik
+                                    </option>
+                            <option value="156">
+                                        Mexiko
+                                    </option>
+                            <option value="73">
+                                        Mikronesien
+                                    </option>
+                            <option value="138">
+                                        Moldau
+                                    </option>
+                            <option value="137">
+                                        Monaco
+                                    </option>
+                            <option value="146">
+                                        Mongolei
+                                    </option>
+                            <option value="139">
+                                        Montenegro
+                                    </option>
+                            <option value="151">
+                                        Montserrat
+                                    </option>
+                            <option value="158">
+                                        Mosambik
+                                    </option>
+                            <option value="145">
+                                        Myanmar
+                                    </option>
+                            <option value="159">
+                                        Namibia
+                                    </option>
+                            <option value="168">
+                                        Nauru
+                                    </option>
+                            <option value="167">
+                                        Nepal
+                                    </option>
+                            <option value="160">
+                                        Neukaledonien
+                                    </option>
+                            <option value="170">
+                                        Neuseeland
+                                    </option>
+                            <option value="165">
+                                        Niederlande
+                                    </option>
+                            <option value="161">
+                                        Niger
+                                    </option>
+                            <option value="163">
+                                        Nigeria
+                                    </option>
+                            <option value="164">
+                                        Nikaragua
+                                    </option>
+                            <option value="169">
+                                        Niue
+                                    </option>
+                            <option value="120">
+                                        Nordkorea
+                                    </option>
+                            <option value="162">
+                                        Norfolk Insel
+                                    </option>
+                            <option value="166">
+                                        Norwegen
+                                    </option>
+                            <option value="148">
+                                        Nördliche Marianen
+                                    </option>
+                            <option value="171">
+                                        Oman
+                                    </option>
+                            <option value="177">
+                                        Pakistan
+                                    </option>
+                            <option value="184">
+                                        Palau
+                                    </option>
+                            <option value="172">
+                                        Panama
+                                    </option>
+                            <option value="175">
+                                        Papua Neu-Guinea
+                                    </option>
+                            <option value="185">
+                                        Paraguay
+                                    </option>
+                            <option value="173">
+                                        Peru
+                                    </option>
+                            <option value="176">
+                                        Philippinen
+                                    </option>
+                            <option value="180">
+                                        Pitcairninseln
+                                    </option>
+                            <option value="178">
+                                        Polen
+                                    </option>
+                            <option value="183">
+                                        Portugal
+                                    </option>
+                            <option value="181">
+                                        Puerto Rico
+                                    </option>
+                            <option value="191">
+                                        Ruanda
+                                    </option>
+                            <option value="188">
+                                        Rumänien
+                                    </option>
+                            <option value="190">
+                                        Russische Föderation
+                                    </option>
+                            <option value="210">
+                                        Saint-Martin (Niederländischer Teil)
+                                    </option>
+                            <option value="140">
+                                        Saint-Martin (franz. Teil)
+                                    </option>
+                            <option value="248">
+                                        Sambia
+                                    </option>
+                            <option value="244">
+                                        Samoa
+                                    </option>
+                            <option value="203">
+                                        San Marino
+                                    </option>
+                            <option value="26">
+                                        Sankt Bartholomäus
+                                    </option>
+                            <option value="192">
+                                        Saudi Arabien
+                                    </option>
+                            <option value="196">
+                                        Schweden
+                                    </option>
+                            <option value="43">
+                                        Schweiz
+                                    </option>
+                            <option value="204">
+                                        Senegal
+                                    </option>
+                            <option value="189">
+                                        Serbien
+                                    </option>
+                            <option value="194">
+                                        Seychellen
+                                    </option>
+                            <option value="202">
+                                        Sierra Leone
+                                    </option>
+                            <option value="249">
+                                        Simbabwe
+                                    </option>
+                            <option value="197">
+                                        Singapur
+                                    </option>
+                            <option value="201">
+                                        Slowakei
+                                    </option>
+                            <option value="199">
+                                        Slowenien
+                                    </option>
+                            <option value="193">
+                                        Solomoninseln
+                                    </option>
+                            <option value="205">
+                                        Somalia
+                                    </option>
+                            <option value="68">
+                                        Spanien
+                                    </option>
+                            <option value="129">
+                                        Sri Lanka
+                                    </option>
+                            <option value="198">
+                                        St. Helena, Ascension und Tristan da Cunha
+                                    </option>
+                            <option value="119">
+                                        St. Kitts und Nevis
+                                    </option>
+                            <option value="127">
+                                        St. Lucia
+                                    </option>
+                            <option value="237">
+                                        St. Vincent und die Grenadinen
+                                    </option>
+                            <option value="179">
+                                        St.-Pierre und Miquelon
+                                    </option>
+                            <option value="182">
+                                        Staat Palästina
+                                    </option>
+                            <option value="195">
+                                        Sudan
+                                    </option>
+                            <option value="206">
+                                        Surinam
+                                    </option>
+                            <option value="200">
+                                        Svalbard- und Jan Mayen-Inseln
+                                    </option>
+                            <option value="212">
+                                        Swasiland
+                                    </option>
+                            <option value="211">
+                                        Syrien
+                                    </option>
+                            <option value="208">
+                                        São Tomé und Príncipe
+                                    </option>
+                            <option value="89">
+                                        Süd-Georgien und südliche Sandwichinseln
+                                    </option>
+                            <option value="247">
+                                        Südafrika
+                                    </option>
+                            <option value="121">
+                                        Südkorea
+                                    </option>
+                            <option value="207">
+                                        Südsudan
+                                    </option>
+                            <option value="218">
+                                        Tadschikistan
+                                    </option>
+                            <option value="227">
+                                        Taiwan
+                                    </option>
+                            <option value="228">
+                                        Tansania
+                                    </option>
+                            <option value="217">
+                                        Thailand
+                                    </option>
+                            <option value="223">
+                                        Timor-Leste
+                                    </option>
+                            <option value="216">
+                                        Togo
+                                    </option>
+                            <option value="219">
+                                        Tokelau
+                                    </option>
+                            <option value="222">
+                                        Tonga
+                                    </option>
+                            <option value="225">
+                                        Trinidad und Tobago
+                                    </option>
+                            <option value="214">
+                                        Tschad
+                                    </option>
+                            <option value="56">
+                                        Tschechische Republik
+                                    </option>
+                            <option value="221">
+                                        Tunesien
+                                    </option>
+                            <option value="220">
+                                        Turkmenistan
+                                    </option>
+                            <option value="213">
+                                        Turks- und Caicosinseln
+                                    </option>
+                            <option value="226">
+                                        Tuvalu
+                                    </option>
+                            <option value="224">
+                                        Türkei
+                                    </option>
+                            <option value="233">
+                                        USA - Vereinigte Staaten von Amerika
+                                    </option>
+                            <option value="232">
+                                        USA kleinere amerikanische Überseeinseln
+                                    </option>
+                            <option value="230">
+                                        Uganda
+                                    </option>
+                            <option value="229">
+                                        Ukraine
+                                    </option>
+                            <option value="99">
+                                        Ungarn
+                                    </option>
+                            <option value="234">
+                                        Uruguay
+                                    </option>
+                            <option value="235">
+                                        Usbekistan
+                                    </option>
+                            <option value="242">
+                                        Vanuatu
+                                    </option>
+                            <option value="236">
+                                        Vatikan (Heiliger Stuhl)
+                                    </option>
+                            <option value="238">
+                                        Venezuela
+                                    </option>
+                            <option value="2">
+                                        Vereinigte Arabische Emirate
+                                    </option>
+                            <option value="231">
+                                        Vereinigtes Königreich
+                                    </option>
+                            <option value="241">
+                                        Vietnam
+                                    </option>
+                            <option value="243">
+                                        Wallis und Futuna
+                                    </option>
+                            <option value="54">
+                                        Weihnachtsinseln
+                                    </option>
+                            <option value="36">
+                                        Weißrussland
+                                    </option>
+                            <option value="66">
+                                        Westliche Sahara
+                                    </option>
+                            <option value="40">
+                                        Zentralafrikanische Republik
+                                    </option>
+                            <option value="55">
+                                        Zypern
+                                    </option>
+                            <option value="65">
+                                        Ägypten
+                                    </option>
+                            <option value="87">
+                                        Äquatorialguinea
+                                    </option>
+                            <option value="69">
+                                        Äthiopien
+                                    </option>
+                            <option value="12">
+                                        Österreich
+                                    </option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field o_fake_not_editable o_website_form_required_custom">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="phone">
+                                Telefon
+                            </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="phone" required=""/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field o_website_form_required_custom">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="email_from">E-Mail</label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="email_from" required=""/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field o_website_form_required_custom">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="partner_name">Ihr Unternehmen</label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="partner_name" required=""/>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field o_fake_not_editable">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="website">
+                                Website
+                            </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="website"/>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field o_fake_not_editable">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="referred"> Empfohlen durch </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="referred"/>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field o_website_form_required_custom">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="activity_field_id">
+                                Tätigkeitsbereich
+                            </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <select class="form-control o_website_form_input" name="activity_field_id" required="false">
+                            <option value="1">
+                                        Sanitärinstallation
+                                    </option>
+                            <option value="2">
+                                        Heizungsinstallation
+                                    </option>
+                            <option value="3">
+                                        Bauträger
+                                    </option>
+                            <option value="4">
+                                        Dienstleister Gebäudetechnik
+                                    </option>
+                            <option value="5">
+                                        Handelsvertretung
+                                    </option>
+                            <option value="6">
+                                        Handelsunternehmen
+                                    </option>
+                            <option value="7">
+                                        Andere
+                                    </option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field o_website_form_required_custom">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="employee_count_id">
+                                Anzahl Mitarbeiter
+                            </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <select class="form-control o_website_form_input" name="employee_count_id" required="false">
+                            <option value="1">
+                                        1-3
+                                    </option>
+                            <option value="2">
+                                        4-10
+                                    </option>
+                            <option value="3">
+                                        11-20
+                                    </option>
+                            <option value="4">
+                                        21-50
+                                    </option>
+                            <option value="5">
+                                        &gt;50
+                                    </option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field o_fake_not_editable o_website_form_required_custom">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="tax_number">
+                                Steuernummer
+                            </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="tax_number" required=""/>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field o_fake_not_editable">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="vat">
+                                UID-Nummer
+                            </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="vat"/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field o_website_form_required o_fake_not_editable o_website_form_field_hidden">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="name">Betreff</label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="name" required="" placeholder="Partnerregistrierung" value="Partnerregistrierung"/>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field d-none">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="team_id">
+                                
+                            </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="team_id" value="11"/>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field d-none">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="user_id">
+                                
+                            </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="user_id" value="7"/>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field o_fake_not_editable o_website_form_required_custom">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="business_certificate">Gewerbenachweis</label>
+                        <br/>
+                        <label class="col-form-label o_fake_editable" for="business_certificate">
+                            <font style="font-size: 12px;">(aktueller Handelsregisterauszug oder Gewerbeanmeldung)</font>
+                            <font style="font-size: 11px;">  </font>
+                        </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="file" class="form-control o_website_form_input" name="business_certificate" required=""/>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field o_fake_not_editable o_website_form_required_custom">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="craft_certificate">Handwerkernachweis</label>
+                        <br/>
+                        <label class="col-form-label o_fake_editable" for="craft_certificate"><font style="font-size: 12px;">(HWK-Mitgliedskarte)</font>  </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="file" class="form-control o_website_form_input" name="craft_certificate" required=""/>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field o_fake_not_editable">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="tax_statement">Steuernachweis</label>
+                        <br/>
+                        <label class="col-form-label o_fake_editable" for="tax_statement">
+                            <font style="font-size: 12px;">(steuerliche Unbedenklichkeitserklärung)  </font>
+                        </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="file" class="form-control o_website_form_input" name="tax_statement"/>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field o_fake_not_editable o_website_form_required_custom">
+                        <div class="col-md-8 pt8 offset-lg-2 col-lg-1" style="">
+                        <input type="checkbox" value="Yes" class="o_website_form_input" name="terms_accepted" required=""/>
+                        </div>
+                        <div class="col-md-4 col-lg-6" style="">
+                        <label class="col-form-label o_fake_editable" for="terms_accepted"> Ich stimme den Allgemeinen Geschäftsbedingungen der Seccua GmbH zu. Die Hinweise zur Datenverarbeitung habe ich gelesen und stimme ich zu.</label>
+                        </div>
+                    </div>
+                    <div class="row form-group form-field o_fake_not_editable o_website_form_field_hidden">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="website_validated_status">
+                                Double Opt-In Status
+                            </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <div class="o_website_form_flex">
+                            <div class="radio o_website_form_flex_item">
+                            <label>
+                                <input type="radio" class="o_website_form_input" name="website_validated_status" value="need_validation"/>
+                                <span class="o_fake_editable">
+                                            Bestätigung ausstehend
+                                        </span>
+                            </label>
+                            </div>
+                            <div class="radio o_website_form_flex_item">
+                            <label>
+                                <input type="radio" class="o_website_form_input" name="website_validated_status" value="validated"/>
+                                <span class="o_fake_editable">
+                                            Bestätigt
+                                        </span>
+                            </label>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
+                        <button class="btn o_website_form_send btn-primary btn-lg rounded-circle" data-original-title="" title="" aria-describedby="tooltip567283" style="">Senden</button>
+                        <span id="o_website_form_result"></span>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+                <div></div>
                     <div class="oe_structure" />
                 </t>
             </t>
